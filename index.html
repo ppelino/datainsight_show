@@ -32,6 +32,34 @@
     background: transparent !important;
   }
 </style>
+<style>
+  /* cinza de página mais visível */
+  :root { --bg: #e9eef3; }
+
+  /* Garante fundo cinza de verdade */
+  html, body {
+    background-color: var(--bg) !important;
+    background: var(--bg) !important;
+  }
+
+  /* Remove fundos brancos das seções que “tapam” o cinza */
+  .section, .section.alt,
+  .section-container,
+  #contato, #contact, #survey, #video-analise {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  /* Hero MUITO claro → zera o gradiente pra deixar aparecer o cinza */
+  .hero {
+    background: transparent !important;
+  }
+
+  /* Footer acompanha o fundo da página */
+  footer, .site-footer {
+    background: transparent !important;
+  }
+</style>
 
 </head>
 <body>
