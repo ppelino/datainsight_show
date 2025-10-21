@@ -1,3 +1,7 @@
+:root {
+  --bg: #f5f6f8;   /* cinza suave de fundo */
+  --card: #ffffff; /* mantém os blocos brancos */
+}
 /* Paleta atual: Indigo + Emerald, tipografia de sistema */
 :root{
   --brand:#2563eb;   /* indigo-600 */
