@@ -10,6 +10,29 @@
   <meta property="og:description" content="Segurança do Trabalho, relatórios claros e automação.">
   <meta property="og:image" content="SST2.jpg">
   <link rel="stylesheet" href="style.css">
+  <style>
+  /* Fundo geral cinza */
+  :root { --bg: #f5f6f8; }
+  body { background: var(--bg) !important; }
+
+  /* Anula fundos brancos e sombra das seções “cartão” globais */
+  .section-container {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  /* Seções específicas que tinham inline branco */
+  #contato, #contact, #survey, #video-analise {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  /* Deixa o footer acompanhar o fundo da página */
+  footer {
+    background: transparent !important;
+  }
+</style>
+
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
