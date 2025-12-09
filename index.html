@@ -14,10 +14,13 @@
 
   <link rel="stylesheet" href="style.css">
 
-  <!-- Garantir fundo cinza caso tenha cache antigo -->
   <style>
-    html, body {
-      background: #e9eef3 !important;
+    html, body { background: #e9eef3 !important; }
+    .slogan-secondary {
+      font-size: 1.15rem;
+      margin: .6rem 0 1.2rem;
+      color: #475569;
+      font-weight: 500;
     }
   </style>
 </head>
@@ -52,18 +55,24 @@
       <div class="container hero-inner">
 
         <div class="hero-copy">
-          <h1>SST inteligente, <span class="accent">sem complicação</span>.</h1>
+
+          <h1>Consultoria em SST com tecnologia, automação e responsabilidade técnica.</h1>
+
+          <p class="slogan-secondary">
+            Tecnologia e precisão a serviço da Segurança do Trabalho.
+          </p>
+
           <p>
-            Laudos, PGR, LTCAT, NR-17, treinamentos e dashboards.  
-            Tudo apoiado pelo sistema próprio <strong>Datainsight SST Suite</strong>, desenvolvido
-            com foco em organização, clareza e automação.
+            Engenheiro de Segurança do Trabalho e Engenheiro da Computação, atuo com PGR, LTCAT, NR-17,
+            avaliações técnicas, treinamentos e indicadores digitais.  
+            Utilizo meu próprio sistema — <strong>Datainsight SST Suite</strong> —
+            para entregar relatórios claros, rastreáveis e com padrão profissional.
           </p>
 
           <div class="hero-actions">
             <a class="btn primary" href="#contato">📞 Solicitar contato</a>
             <a class="btn ghost" href="#demo">▶ Ver demonstrações</a>
 
-            <!-- Demo Online PsyPro / NR-01 -->
             <a class="btn success"
                href="https://nr01teste.netlify.app/"
                target="_blank" rel="noopener">
@@ -156,7 +165,6 @@
           Para testar um sistema online, utilize a demo PsyPro / NR-01 no botão abaixo.
         </p>
 
-        <!-- BOTÃO DA DEMO ONLINE -->
         <div style="text-align:center; margin-bottom:2rem;">
           <a href="https://nr01teste.netlify.app/"
              class="btn primary"
@@ -169,7 +177,6 @@
           </p>
         </div>
 
-        <!-- GIFS -->
         <div class="demo-grid">
 
           <article class="card demo-card">
@@ -190,7 +197,6 @@
             <p>Relatórios automáticos prontos para assinatura e auditoria.</p>
           </article>
 
-          <!-- NOVO GIF PSYPRO -->
           <article class="card demo-card">
             <img src="psypro.gif" alt="Tela PsyPro NR-01 - avaliações psicossociais">
             <h3>PsyPro / NR-01</h3>
@@ -313,14 +319,12 @@
     </section>
   </main>
 
-  <!-- RODAPÉ -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>&copy; 2025 — Datainsight Consultoria em SST</p>
     </div>
   </footer>
 
-  <!-- WHATSAPP FLUTUANTE -->
   <a class="floating-cta"
      href="https://api.whatsapp.com/send?phone=5511977198220"
      target="_blank" rel="noopener">
@@ -328,17 +332,13 @@
     Fale no WhatsApp
   </a>
 
-  <!-- SCRIPT DO MENU MOBILE -->
   <script>
     const toggle = document.querySelector('.nav-toggle');
     const nav = document.getElementById('nav');
 
     toggle.addEventListener('click', () => {
       nav.classList.toggle('open');
-      toggle.setAttribute(
-        'aria-expanded',
-        nav.classList.contains('open')
-      );
+      toggle.setAttribute('aria-expanded', nav.classList.contains('open'));
     });
 
     document.querySelectorAll('a[href^="#"]').forEach(link => {
