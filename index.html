@@ -14,7 +14,7 @@
 
   <link rel="stylesheet" href="style.css">
 
-  <!-- Ajuste fundo cinza -->
+  <!-- Ajuste fundo cinza (caso algum CSS antigo insista em branco) -->
   <style>
     html, body {
       background: #e9eef3 !important;
@@ -66,12 +66,13 @@
             <!-- Demo Online PsyPro / NR-01 -->
             <a class="btn success"
                href="https://nr01teste.netlify.app/"
-               target="_blank">
+               target="_blank" rel="noopener">
                🚀 Testar demo PsyPro / NR-01 (online)
             </a>
 
-            <a class="btn" style="background:#10b981; color:white; font-weight:600;"
-               href="https://datainsight-sst-pix.netlify.app/" target="_blank">
+            <a class="btn"
+               style="background:#10b981; color:white; font-weight:600;"
+               href="https://datainsight-sst-pix.netlify.app/" target="_blank" rel="noopener">
                💳 Comprar Agora
             </a>
           </div>
@@ -138,7 +139,7 @@
           </article>
 
           <article class="card service">
-            <h3>Automação & Dados</h3>
+            <h3>Automação &amp; Dados</h3>
             <p>Dashboards, automações e controle digital completo.</p>
           </article>
 
@@ -164,8 +165,8 @@
         <div style="text-align:center; margin-bottom:2rem;">
           <a href="https://nr01teste.netlify.app/"
              class="btn primary"
-             target="_blank"
-             style="padding:1rem 2rem; font-size:1.15rem;">
+             target="_blank" rel="noopener"
+             style="padding:1rem 2rem; font-size:1.05rem;">
             🚀 Testar demo PsyPro / NR-01 (online)
           </a>
           <p style="color:#777; margin-top:0.5rem;">
@@ -198,7 +199,7 @@
 
         <div style="text-align:center; margin-top:2rem;">
           <p>Quer mais conteúdo técnico e explicações sobre NRs?</p>
-          <a class="btn ghost" href="https://youtube.com/@edsongomes2649" target="_blank">
+          <a class="btn ghost" href="https://www.youtube.com/@edsongomes2649" target="_blank" rel="noopener">
             ▶ Acessar meu canal no YouTube
           </a>
         </div>
@@ -287,9 +288,20 @@
             <h3>Contatos</h3>
             <ul class="list">
               <li>📞 (11) 97719-8220</li>
-              <li>✉️ engestedsonbraz@gmail.com</li>
-              <li>🔗 LinkedIn, Instagram, GitHub</li>
+              <li>✉️ <a href="mailto:engestedsonbraz@gmail.com">engestedsonbraz@gmail.com</a></li>
             </ul>
+
+            <div class="social">
+              <a href="https://www.instagram.com/engestedsonbraz/" target="_blank" rel="noopener">
+                <span>📸 Instagram</span>
+              </a>
+              <a href="https://www.linkedin.com/in/edsonbrazengsegtrabalho/" target="_blank" rel="noopener">
+                <span>💼 LinkedIn</span>
+              </a>
+              <a href="https://github.com/ppelino" target="_blank" rel="noopener">
+                <span>💻 GitHub</span>
+              </a>
+            </div>
           </aside>
         </div>
       </div>
@@ -306,8 +318,8 @@
   <!-- WHATSAPP FLUTUANTE -->
   <a class="floating-cta"
      href="https://api.whatsapp.com/send?phone=5511977198220"
-     target="_blank">
-    <img src="whatsapp-icon.png" width="22">
+     target="_blank" rel="noopener">
+    <img src="whatsapp-icon.png" width="22" alt="">
     Fale no WhatsApp
   </a>
 
