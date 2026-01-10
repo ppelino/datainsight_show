@@ -1,175 +1,377 @@
-<script>
-  // ===== MENU MOBILE (igual ao seu) =====
-  const toggle = document.querySelector('.nav-toggle');
-  const nav = document.getElementById('nav');
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  if (toggle && nav) {
+  <!-- Google Analytics GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JY2RSDS8E1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JY2RSDS8E1');
+  </script>
+  <!-- Fim Google Analytics -->
+
+  <title>Datainsight SST — Consultoria e Assessoria</title>
+  <meta name="description" content="Consultoria e Assessoria em Segurança do Trabalho com foco em dados, automação e relatórios profissionais.">
+  <link rel="icon" href="site-icon.png" type="image/png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Datainsight SST — Consultoria e Assessoria">
+  <meta property="og:description" content="Segurança do Trabalho com dashboards, laudos automatizados e responsabilidade técnica.">
+  <meta property="og:image" content="SST2.jpg">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    html, body { background: #e9eef3 !important; }
+    .slogan-secondary {
+      font-size: 1.15rem;
+      margin: .6rem 0 1.2rem;
+      color: #475569;
+      font-weight: 500;
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- CABEÇALHO -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <img src="datainsight.jpg" alt="Logo Datainsight SST" width="44" height="44">
+        <span>Datainsight <strong>SST</strong></span>
+      </a>
+
+      <button class="nav-toggle" aria-controls="nav" aria-expanded="false">☰</button>
+
+      <nav id="nav" class="site-nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#demo">Demonstrações</a>
+        <a href="#mvv">Missão, Visão e Valores</a>
+        <a href="#treinamentos">Treinamentos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="conteudo">
+    <section class="hero">
+      <div class="container hero-inner">
+
+        <div class="hero-copy">
+
+          <h1>Consultoria em SST com tecnologia, automação e responsabilidade técnica.</h1>
+
+          <p class="slogan-secondary">
+            Tecnologia e precisão a serviço da Segurança do Trabalho.
+          </p>
+
+          <p>
+            Engenheiro de Segurança do Trabalho e Engenheiro da Computação, atuo com PGR, LTCAT, NR-17,
+            avaliações técnicas, treinamentos e indicadores digitais.  
+            Utilizo meu próprio sistema — <strong>Datainsight SST Suite</strong> —
+            para entregar relatórios claros, rastreáveis e com padrão profissional.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#contato">📞 Solicitar contato</a>
+            <a class="btn ghost" href="#demo">▶ Ver demonstrações</a>
+
+            <a class="btn success"
+               href="https://nr01teste.netlify.app/"
+               target="_blank" rel="noopener">
+               🚀 Testar demo PsyPro / NR-01 (online)
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <img src="SST2.jpg" alt="Imagem SST">
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+      <div class="container grid-2">
+
+        <!-- SOBRE como card -->
+        <article class="card">
+          <h2>Sobre</h2>
+          <p>
+            Sou <strong>Edson Gomes</strong>, Engenheiro de Segurança do Trabalho,
+            Engenheiro da Computação e professor da rede estadual há mais de 20 anos.
+          </p>
+          <p>
+            Desenvolvi o <strong>Datainsight SST Suite</strong> para facilitar a gestão de SST:
+            PGR, LTCAT, avaliações, relatórios e indicadores — tudo organizado em um fluxo lógico.
+          </p>
+        </article>
+
+        <!-- DIFERENCIAIS com selo CREA -->
+        <aside class="card muted">
+          <h3>Diferenciais</h3>
+          <ul class="check">
+            <li>Responsabilidade técnica registrada no CREA-SP.</li>
+            <li>Dashboards e automação.</li>
+            <li>Relatórios claros e visuais.</li>
+            <li>Didática e precisão técnica.</li>
+          </ul>
+
+          <div class="crea-badge">
+            <img src="crea-sp.png" alt="CREA-SP" width="70" height="70">
+            <div class="crea-texto">
+              <strong>Engenharia com registro profissional</strong>
+              <span>Atuação com responsabilidade técnica no CREA-SP.</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="section alt">
+      <div class="container">
+        <h2>Serviços</h2>
+        <p class="section-lead">Atuação completa em Segurança do Trabalho.</p>
+
+        <div class="cards">
+          <article class="card service">
+            <h3>PGR, LTCAT e Laudos</h3>
+            <p>Conformidade com NR-01, NR-09, NR-15 e demais requisitos técnicos.</p>
+          </article>
+
+          <article class="card service">
+            <h3>Documentação de NRs</h3>
+            <p>Implementação e atualização de NRs, PPP, ASO e PCMSO (parceria médica).</p>
+          </article>
+
+          <article class="card service">
+            <h3>Avaliações Técnicas</h3>
+            <p>Dosimetria, IBUTG, agentes químicos e análises ergonômicas NR-17.</p>
+          </article>
+
+          <article class="card service">
+            <h3>Treinamentos</h3>
+            <p>NR-01 a NR-38, CIPA, brigada, ergonomia e campanhas internas.</p>
+          </article>
+
+          <article class="card service">
+            <h3>Automação &amp; Dados</h3>
+            <p>Dashboards, automações e controle digital completo.</p>
+          </article>
+
+          <article class="card service">
+            <h3>Assessoria Mensal</h3>
+            <p>Suporte recorrente e auditorias para manter tudo em ordem.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEMONSTRAÇÕES -->
+    <section id="demo" class="section">
+      <div class="container">
+
+        <h2>Demonstrações dos meus sistemas de SST</h2>
+        <p class="section-lead">
+          Abaixo você vê GIFs reais da <strong>Datainsight SST Suite</strong> (gestão de PGR, laudos e dashboards)
+          e da <strong>PsyPro / NR-01</strong> (avaliações psicossociais).  
+          Para testar um sistema online, utilize a demo PsyPro / NR-01 no botão abaixo.
+        </p>
+
+        <div style="text-align:center; margin-bottom:2rem;">
+          <a href="https://nr01teste.netlify.app/"
+             class="btn primary"
+             target="_blank" rel="noopener"
+             style="padding:1rem 2rem; font-size:1.05rem;">
+            🚀 Testar demo PsyPro / NR-01 (online)
+          </a>
+          <p style="color:#777; margin-top:0.5rem;">
+            A demo PsyPro permite explorar avaliações psicossociais NR-01 e fluxo digital de riscos.
+          </p>
+        </div>
+
+        <div class="demo-grid">
+
+          <article class="card demo-card">
+            <img src="dash.gif" alt="Dashboard Datainsight SST Suite">
+            <h3>Dashboard em tempo real</h3>
+            <p>Visão geral clara de riscos, setores, empresas e documentação.</p>
+          </article>
+
+          <article class="card demo-card">
+            <img src="pgr.gif" alt="PGR Datainsight SST Suite">
+            <h3>PGR organizado por setores e riscos</h3>
+            <p>Cadastro padronizado com rastreabilidade completa.</p>
+          </article>
+
+          <article class="card demo-card">
+            <img src="pgrf.gif" alt="Exportação de relatórios">
+            <h3>Exportação e impressão</h3>
+            <p>Relatórios automáticos prontos para assinatura e auditoria.</p>
+          </article>
+
+          <article class="card demo-card">
+            <img src="psypro.gif" alt="Tela PsyPro NR-01 - avaliações psicossociais">
+            <h3>PsyPro / NR-01</h3>
+            <p>
+              Registro e acompanhamento de avaliações psicossociais integradas ao fluxo de SST,
+              com foco em NR-01 e gestão de riscos ocupacionais.
+            </p>
+          </article>
+
+        </div>
+
+        <div style="text-align:center; margin-top:2rem;">
+          <p>Quer mais conteúdo técnico e explicações sobre NRs?</p>
+          <a class="btn ghost" href="https://www.youtube.com/@edsongomes2649" target="_blank" rel="noopener">
+            ▶ Acessar meu canal no YouTube
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSÃO, VISÃO E VALORES -->
+    <section id="mvv" class="section alt">
+      <div class="container">
+        <h2>Missão, Visão e Valores</h2>
+
+        <div class="mvv-grid">
+          <article class="card">
+            <h3>Missão</h3>
+            <p>
+              Levar tecnologia e clareza para a SST,
+              reduzindo riscos e facilitando decisões.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Visão</h3>
+            <p>
+              Ser referência em consultoria de SST com automação e análise de dados.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Valores</h3>
+            <ul>
+              <li>Ética e responsabilidade técnica.</li>
+              <li>Clareza na comunicação.</li>
+              <li>Didática e atendimento humano.</li>
+              <li>Inovação e automação.</li>
+              <li>Confidencialidade total.</li>
+            </ul>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TREINAMENTOS -->
+    <section id="treinamentos" class="section">
+      <div class="container">
+        <h2>Treinamentos</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>NR-01 a NR-38</h3>
+            <p>Planos didáticos modernos e aplicáveis.</p>
+          </article>
+
+          <article class="card">
+            <h3>Ergonomia (NR-17)</h3>
+            <p>Análises, orientações e acompanhamento.</p>
+          </article>
+
+          <article class="card">
+            <h3>Brigada e Emergência</h3>
+            <p>Formação, simulações e plano de abandono.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section alt">
+      <div class="container">
+        <h2>Fale comigo</h2>
+
+        <div class="grid-2">
+          <form class="card" action="https://formspree.io/f/mpwqlwzq" method="POST">
+            <label>Nome</label>
+            <input type="text" name="nome" required>
+
+            <label>E-mail</label>
+            <input type="email" name="email" required>
+
+            <label>Mensagem</label>
+            <textarea name="mensagem" rows="5" required></textarea>
+
+            <button class="btn primary" type="submit">Enviar</button>
+          </form>
+
+          <aside class="card muted">
+            <h3>Contatos</h3>
+            <ul class="list">
+              <li>📞 (11) 97719-8220</li>
+              <li>✉️ <a href="mailto:engestedsonbraz@gmail.com">engestedsonbraz@gmail.com</a></li>
+            </ul>
+
+            <div class="social">
+              <a href="https://www.instagram.com/engestedsonbraz/" target="_blank" rel="noopener">
+                <span>📸 Instagram</span>
+              </a>
+              <a href="https://www.linkedin.com/in/edsonbrazengsegtrabalho/" target="_blank" rel="noopener">
+                <span>💼 LinkedIn</span>
+              </a>
+              <a href="https://github.com/ppelino" target="_blank" rel="noopener">
+                <span>💻 GitHub</span>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 — Datainsight Consultoria em SST</p>
+    </div>
+  </footer>
+
+  <a class="floating-cta"
+     href="https://api.whatsapp.com/send?phone=5511977198220"
+     target="_blank" rel="noopener">
+    <img src="whatsapp-icon.png" width="22" alt="">
+    Fale no WhatsApp
+  </a>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('nav');
+
     toggle.addEventListener('click', () => {
       nav.classList.toggle('open');
       toggle.setAttribute('aria-expanded', nav.classList.contains('open'));
     });
-  }
 
-  // ===== SCROLL SUAVE NAS ÂNCORAS (igual ao seu, só com proteção extra) =====
-  document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener('click', e => {
-      const id = link.getAttribute('href');
-      if (id && id.length > 1) {
-        const el = document.querySelector(id);
-        if (el) {
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        const id = link.getAttribute('href');
+        if (id.length > 1) {
           e.preventDefault();
-          el.scrollIntoView({ behavior: "smooth" });
+          document.querySelector(id).scrollIntoView({ behavior: "smooth" });
         }
-      }
-    });
-  });
-
-  // ===== GA4: FUNÇÃO SEGURA (não quebra o site se GA falhar) =====
-  function safeGtagEvent(eventName, params) {
-    try {
-      if (typeof gtag === "function") gtag('event', eventName, params || {});
-    } catch (e) {}
-  }
-
-  function getLinkText(a) {
-    const txt = (a.innerText || a.textContent || "").trim();
-    if (txt) return txt.slice(0, 80);
-    const img = a.querySelector('img');
-    if (img && img.alt) return img.alt.slice(0, 80);
-    return "(sem texto)";
-  }
-
-  function absUrl(url) {
-    try { return new URL(url, window.location.href).href; }
-    catch { return url; }
-  }
-
-  function isSameDomain(url) {
-    try {
-      const u = new URL(url, window.location.href);
-      return u.hostname === window.location.hostname;
-    } catch (e) {
-      return false;
-    }
-  }
-
-  // ===== REGRAS DE CATEGORIZAÇÃO =====
-  function isWhatsApp(url) {
-    return /wa\.me|api\.whatsapp\.com|web\.whatsapp\.com/i.test(url);
-  }
-  function isYouTube(url) {
-    return /youtube\.com|youtu\.be/i.test(url);
-  }
-  function isInstagram(url) {
-    return /instagram\.com/i.test(url);
-  }
-  function isLinkedIn(url) {
-    return /linkedin\.com/i.test(url);
-  }
-  function isGitHub(url) {
-    return /github\.com/i.test(url);
-  }
-  function isDemo(url) {
-    return /nr01teste\.netlify\.app/i.test(url);
-  }
-
-  // ===== CAPTURA DE TODOS OS CLIQUES EM LINKS =====
-  document.addEventListener('click', function (e) {
-    const a = e.target.closest('a');
-    if (!a) return;
-
-    const href = a.getAttribute('href');
-    if (!href || href.trim() === '' || href.trim() === '#') return;
-
-    const url = href.trim();
-    const text = getLinkText(a);
-
-    // Âncora interna (#sobre etc.) -> navegação
-    if (url.startsWith('#')) {
-      safeGtagEvent('anchor_click', {
-        event_category: 'Navegacao',
-        event_label: url,
-        link_text: text
-      });
-      return;
-    }
-
-    // e-mail
-    if (url.startsWith('mailto:')) {
-      safeGtagEvent('email_click', {
-        event_category: 'Contato',
-        event_label: url.replace('mailto:', ''),
-        link_text: text
-      });
-      return;
-    }
-
-    // telefone (se um dia você usar tel:)
-    if (url.startsWith('tel:')) {
-      safeGtagEvent('phone_click', {
-        event_category: 'Contato',
-        event_label: url.replace('tel:', ''),
-        link_text: text
-      });
-      return;
-    }
-
-    const absolute = absUrl(url);
-
-    // WhatsApp (evento separado)
-    if (isWhatsApp(absolute)) {
-      safeGtagEvent('whatsapp_click', {
-        event_category: 'Contato',
-        event_label: 'WhatsApp',
-        link_url: absolute,
-        link_text: text
-      });
-      return;
-    }
-
-    // Demo (evento separado)
-    if (isDemo(absolute)) {
-      safeGtagEvent('demo_click', {
-        event_category: 'Produto',
-        event_label: 'Demo PsyPro / NR-01',
-        link_url: absolute,
-        link_text: text
-      });
-      return;
-    }
-
-    // Links externos: Instagram/LinkedIn/YouTube/GitHub e outros
-    if (!isSameDomain(absolute)) {
-      let label = 'Externo';
-      if (isYouTube(absolute)) label = 'YouTube';
-      else if (isInstagram(absolute)) label = 'Instagram';
-      else if (isLinkedIn(absolute)) label = 'LinkedIn';
-      else if (isGitHub(absolute)) label = 'GitHub';
-
-      safeGtagEvent('outbound_click', {
-        event_category: 'Links Externos',
-        event_label: label,
-        link_url: absolute,
-        link_text: text
-      });
-      return;
-    }
-
-    // Link interno (outra página do seu site)
-    safeGtagEvent('internal_click', {
-      event_category: 'Navegacao',
-      event_label: absolute,
-      link_text: text
-    });
-  });
-
-  // ===== FORM: rastrear submit do Formspree (sem mexer no HTML do form) =====
-  document.querySelectorAll('form').forEach((form) => {
-    form.addEventListener('submit', () => {
-      safeGtagEvent('form_submit', {
-        event_category: 'Contato',
-        event_label: form.getAttribute('action') || '(sem action)'
       });
     });
-  });
-</script>
+  </script>
+</body>
+</html>
