@@ -430,13 +430,20 @@ form button {
   }
 }
 /* ============================
-   CONTATOS - ORGANIZAÇÃO EM COLUNA
+   CONTATOS – ESPAÇAMENTO UNIFORME
    ============================ */
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;            /* espaço igual entre telefone e e-mail */
+  margin-bottom: 0.8rem;
+}
 
 .social {
   display: flex;
-  flex-direction: column; /* um embaixo do outro */
-  gap: 0.6rem;            /* espaço entre os contatos */
+  flex-direction: column;
+  gap: 0.6rem;            /* espaço igual entre Instagram / LinkedIn / GitHub */
 }
 
 .social a {
@@ -445,4 +452,5 @@ form button {
   gap: 0.6rem;
   font-size: 1.05rem;
 }
+
 
