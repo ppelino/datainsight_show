@@ -372,6 +372,22 @@ form button {
   70%  { box-shadow: 0 10px 26px rgba(0,0,0,0.22), 0 0 0 10px rgba(34,197,94,0); }
   100% { box-shadow: 0 10px 26px rgba(0,0,0,0.22), 0 0 0 0 rgba(34,197,94,0); }
 }
+/* ============================
+   MVV (Missão, Visão e Valores) - ESPAÇAMENTO
+   ============================ */
+
+.mvv-grid {
+  display: grid;
+  grid-template-columns: 1fr;      /* como está no seu HTML (uma coluna) */
+  gap: 1.6rem;                     /* AFASTA Missão / Visão / Valores */
+  margin-top: 2.2rem;              /* AFASTA do título */
+}
+
+/* Dá mais "respiro" dentro dos cards dessa seção */
+#mvv .card {
+  padding: 1.8rem;
+}
+
 
 /* ============================
    RESPONSIVIDADE
