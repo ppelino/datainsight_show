@@ -429,3 +429,20 @@ form button {
     font-size: 0.92rem;
   }
 }
+/* ============================
+   CONTATOS - ORGANIZAÇÃO EM COLUNA
+   ============================ */
+
+.social {
+  display: flex;
+  flex-direction: column; /* um embaixo do outro */
+  gap: 0.6rem;            /* espaço entre os contatos */
+}
+
+.social a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.05rem;
+}
+
