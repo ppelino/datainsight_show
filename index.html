@@ -61,6 +61,27 @@
       margin-top: .8rem;
       font-size: .95rem;
     }
+
+    /* Vitrine comercial - folders integrados ao site */
+    .software-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr));gap:1.4rem;margin-top:2rem; }
+    .software-folder {background:white;border:1px solid #dbe4f0;border-radius:20px;overflow:hidden;box-shadow:0 12px 26px rgba(15,23,42,.08);display:flex;flex-direction:column;}
+    .software-cover {padding:1.8rem;min-height:190px;background:linear-gradient(135deg,#082844 0%,#11588b 62%,#0b998d 100%);color:white;position:relative;overflow:hidden;}
+    .software-cover:after {content:'';position:absolute;width:175px;height:175px;border:1px solid #ffffff50;border-radius:50%;right:-48px;top:-65px;box-shadow:0 0 0 30px #ffffff0d,0 0 0 60px #ffffff0a;}
+    .software-cover .folder-eyebrow {font-size:.77rem;text-transform:uppercase;letter-spacing:.14em;font-weight:800;color:#adf4e9;}
+    .software-cover h3 {font-size:1.6rem;margin:.65rem 0;color:white;position:relative;z-index:1;}
+    .software-cover p {color:#ecf8ff;margin:0;position:relative;z-index:1;max-width:34ch;}
+    .folder-main {padding:1.4rem;display:flex;flex-direction:column;flex:1;gap:1rem;}
+    .folder-main > p {margin:0;color:#334155;}
+    .folder-tags {display:flex;flex-wrap:wrap;gap:.4rem;}
+    .folder-tags span {font-size:.75rem;font-weight:700;padding:.35rem .6rem;border-radius:99px;background:#e8f4fb;color:#0c4c73;}
+    .folder-details {border-top:1px solid #e2e8f0;padding-top:.7rem;}
+    .folder-details summary {cursor:pointer;font-weight:700;color:#0a5f8d;padding:.45rem 0;}
+    .folder-details ul {padding-left:1.3rem;line-height:1.6;color:#334155;}
+    .folder-cta {display:flex;flex-wrap:wrap;gap:.7rem;margin-top:auto;}
+    .folder-cta a {display:inline-block;text-decoration:none;border-radius:10px;padding:.72rem .9rem;font-size:.91rem;font-weight:700;background:#097b7d;color:white;}
+    .folder-cta a.secondary {background:#e6eff5;color:#083f64;}
+    .folder-note {font-size:.87rem;color:#64748b;margin-top:1rem;}
+    @media(max-width:750px){.software-grid{grid-template-columns:1fr}.software-cover{min-height:160px}}
   </style>
 </head>
 
@@ -80,6 +101,7 @@
       <nav id="nav" class="site-nav">
         <a href="#sobre">Sobre</a>
         <a href="#servicos">Serviços</a>
+        <a href="#softwares">Softwares</a>
         <a href="#avalia">Avalia NR-01</a>
         <a href="#demo">Demonstrações</a>
         <a href="#mvv">Missão, Visão e Valores</a>
@@ -213,6 +235,74 @@
             <p>Suporte recorrente e auditorias para manter tudo em ordem.</p>
           </article>
         </div>
+      </div>
+    </section>
+
+    <!-- FOLDERS COMERCIAIS DOS SOFTWARES -->
+    <section id="softwares" class="section">
+      <div class="container">
+        <h2>Softwares e soluções Datainsight</h2>
+        <p class="section-lead">Conheça nossas soluções digitais para SST, avaliação psicossocial e gestão de inspeções. Acesse os folders interativos e solicite uma demonstração.</p>
+        <div class="software-grid">
+          <article class="software-folder">
+            <div class="software-cover">
+              <span class="folder-eyebrow">01 / GESTÃO DE SST</span>
+              <h3>Datainsight SST Suite</h3>
+              <p>Plataforma profissional para gestão integrada de Segurança e Saúde no Trabalho.</p>
+            </div>
+            <div class="folder-main">
+              <p>Centralize processos técnicos, acompanhe indicadores e organize documentação em uma solução digital.</p>
+              <div class="folder-tags"><span>PGR e NR-01</span><span>PCMSO / ASO</span><span>NR-17</span><span>LTCAT</span><span>Dashboard</span></div>
+              <details class="folder-details">
+                <summary>Conhecer funcionalidades do folder</summary>
+                <ul><li>Organização de empresas, setores e riscos</li><li>Módulos PGR/NR-01, PCMSO/ASO, NR-17 e LTCAT</li><li>Dashboards, gráficos e indicadores gerenciais</li><li>Relatórios e rotinas digitais para apoiar a gestão</li></ul>
+              </details>
+              <div class="folder-cta">
+                <a href="https://api.whatsapp.com/send?phone=5511977198220&text=Ol%C3%A1%21%20Vi%20o%20folder%20do%20Datainsight%20SST%20Suite%20no%20site%20Datainsight%20SST%20e%20gostaria%20de%20solicitar%20uma%20demonstra%C3%A7%C3%A3o%20e%20informa%C3%A7%C3%B5es%20comerciais." target="_blank" rel="noopener">Solicitar demonstração</a>
+                <a class="secondary" href="https://www.youtube.com/watch?v=L4m4mwmGEkU" target="_blank" rel="noopener">▶ Vídeo</a>
+              </div>
+            </div>
+          </article>
+          <article class="software-folder">
+            <div class="software-cover">
+              <span class="folder-eyebrow">02 / RISCOS PSICOSSOCIAIS</span>
+              <h3>Avalia NR-01</h3>
+              <p>Diagnóstico psicossocial inteligente para apoiar a prevenção.</p>
+            </div>
+            <div class="folder-main">
+              <p>Campanhas digitais, acompanhamento da participação e análise de indicadores para a gestão de riscos psicossociais relacionados ao trabalho.</p>
+              <div class="folder-tags"><span>NR-01</span><span>Questionários</span><span>Campanhas</span><span>Indicadores</span><span>Relatórios</span></div>
+              <details class="folder-details">
+                <summary>Conhecer funcionalidades do folder</summary>
+                <ul><li>Criação e acompanhamento de campanhas digitais</li><li>Questionários para colaboradores por link de resposta</li><li>Dashboard executivo e indicadores estratégicos</li><li>Relatórios automáticos e apoio ao plano de ação preventivo</li></ul>
+              </details>
+              <div class="folder-cta">
+                <a href="https://api.whatsapp.com/send?phone=5511977198220&text=Ol%C3%A1%21%20Vi%20o%20folder%20do%20Avalia%20NR-01%20no%20site%20Datainsight%20SST%20e%20gostaria%20de%20solicitar%20uma%20demonstra%C3%A7%C3%A3o%20e%20informa%C3%A7%C3%B5es%20comerciais." target="_blank" rel="noopener">Solicitar demonstração</a>
+                <a class="secondary" href="https://www.youtube.com/watch?v=1MvycKw0gNU" target="_blank" rel="noopener">▶ Vídeo</a>
+              </div>
+            </div>
+          </article>
+          <article class="software-folder">
+            <div class="software-cover">
+              <span class="folder-eyebrow">03 / VISTORIAS</span>
+              <h3>CondoSafe Inspector</h3>
+              <p>Gestão de segurança condominial.</p>
+            </div>
+            <div class="folder-main">
+              <p>Vistorias • Não Conformidades • Plano de Ação. Organização de inspeções com acompanhamento das pendências e relatórios.</p>
+              <div class="folder-tags"><span>Condomínios</span><span>Vistorias</span><span>Não conformidades</span><span>Planos de ação</span><span>PDF</span></div>
+              <details class="folder-details">
+                <summary>Conhecer funcionalidades do folder</summary>
+                <ul><li>Cadastro e gestão de condomínios</li><li>Checklists de vistorias e registros fotográficos</li><li>Controle de não conformidades e planos de ação</li><li>Relatórios em PDF para acompanhamento</li></ul>
+              </details>
+              <div class="folder-cta">
+                <a href="https://api.whatsapp.com/send?phone=5511977198220&text=Ol%C3%A1%21%20Vi%20o%20folder%20do%20CondoSafe%20Inspector%20no%20site%20Datainsight%20SST%20e%20gostaria%20de%20solicitar%20uma%20demonstra%C3%A7%C3%A3o%20e%20informa%C3%A7%C3%B5es%20comerciais." target="_blank" rel="noopener">Solicitar demonstração</a>
+                
+              </div>
+            </div>
+          </article>
+</div>
+        <p class="folder-note">Os folders descrevem funcionalidades das soluções; a contratação, o escopo e as condições de acesso são informados diretamente no atendimento comercial.</p>
       </div>
     </section>
 
